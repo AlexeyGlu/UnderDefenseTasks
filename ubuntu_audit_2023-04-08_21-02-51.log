@@ -1,0 +1,70 @@
+Uptime:  21:02:51 up 1 day,  3:39,  6 users,  load average: 0.01, 0.02, 0.00
+
+Current users:
+oleksiihlushkov tty1         2023-04-07 17:27
+root     pts/0        2023-04-08 20:58 (10.11.13.20)
+oleksiihlushkov pts/1        2023-04-08 16:29 (tmux(36639).%0)
+oleksiihlushkov pts/2        2023-04-08 16:29 (tmux(36639).%1)
+root     pts/3        2023-04-08 21:01 (tmux(51928).%3)
+root     pts/5        2023-04-08 20:24 (tmux(51928).%2)
+
+Recent logins:
+root     pts/3        Sat Apr  8 21:01   still logged in    tmux(51928).%3
+root     pts/0        Sat Apr  8 20:58   still logged in    10.11.13.20
+root     pts/5        Sat Apr  8 20:24   still logged in    tmux(51928).%2
+root     pts/4        Sat Apr  8 19:50 - 21:01  (01:11)     tmux(51928).%1
+root     pts/0        Sat Apr  8 19:49 - 20:24  (00:34)     tmux(51928).%0
+root     pts/3        Sat Apr  8 19:30 - 20:47  (01:16)     10.11.13.20
+oleksiih pts/0        Sat Apr  8 18:31 - 19:30  (00:59)     10.11.13.20
+oleksiih pts/0        Sat Apr  8 18:28 - 18:31  (00:03)     10.11.13.20
+oleksiih pts/3        Sat Apr  8 17:27 - 18:44  (01:16)     10.11.13.20
+oleksiih pts/2        Sat Apr  8 16:29   still logged in    tmux(36639).%1
+
+Top 10 processes by RAM usage:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         475  0.0  4.1 276892 84988 ?        S<s  Apr07   0:43 /lib/systemd/systemd-journald
+root       52523  0.1  3.4 1175464 70452 ?       SNl  19:51   0:07 /opt/osquery/bin/osqueryd
+root         848  0.0  2.2 875300 45680 ?        Ssl  Apr07   0:13 /usr/lib/snapd/snapd
+root       52516  0.0  1.9 164612 39616 ?        SNsl 19:51   0:02 /opt/osquery/bin/osqueryd --flagfile /etc/osquery/osquery.flags --config_path /etc/osquery/osquery.conf
+root         886  0.0  1.0 107904 20920 ?        Ssl  Apr07   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         843  0.0  0.9  29664 18404 ?        Ss   Apr07   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         656  0.0  0.8 345816 18220 ?        SLsl Apr07   0:59 /sbin/multipathd -d -s
+root           1  0.0  0.6 105100 12708 ?        Ss   Apr07   0:21 /sbin/init maybe-ubiquity
+systemd+     747  0.0  0.5  23732 11932 ?        Ss   Apr07   0:00 /lib/systemd/systemd-resolved
+root         708  0.0  0.5  47544 10516 ?        Ss   Apr07   0:00 /usr/bin/VGAuthService
+
+Top 10 processes by CPU usage:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+oleksii+   36639  0.3  0.2   9284  5856 ?        Ss   16:29   0:59 tmux
+root         709  0.1  0.3 236980  7980 ?        Ssl  Apr07   1:48 /usr/bin/vmtoolsd
+root       52523  0.1  3.4 1175464 70452 ?       SNl  19:51   0:07 /opt/osquery/bin/osqueryd
+root       55093  0.1  0.2   8416  5360 pts/3    Ss   21:01   0:00 -bash
+root       55150  0.1  0.1   5388  3116 pts/3    S+   21:02   0:00 jq .
+root           1  0.0  0.6 105100 12708 ?        Ss   Apr07   0:21 /sbin/init maybe-ubiquity
+root           2  0.0  0.0      0     0 ?        S    Apr07   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   Apr07   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   Apr07   0:00 [rcu_par_gp]
+root           6  0.0  0.0      0     0 ?        I<   Apr07   0:00 [kworker/0:0H-kblockd]
+
+Virtual memory usage:
+              total        used        free      shared  buff/cache   available
+Mem:          1.9Gi       287Mi       676Mi       1.0Mi       1.0Gi       1.5Gi
+Swap:         2.0Gi          0B       2.0Gi
+
+Disk space usage:
+Filesystem      Size  Used Avail Use% Mounted on
+udev            947M     0  947M   0% /dev
+tmpfs           199M  1.3M  198M   1% /run
+/dev/sda2        49G  6.2G   41G  14% /
+tmpfs           992M     0  992M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           992M     0  992M   0% /sys/fs/cgroup
+/dev/loop1       70M   70M     0 100% /snap/lxd/19188
+/dev/loop2       64M   64M     0 100% /snap/core20/1852
+/dev/loop0       56M   56M     0 100% /snap/core18/2714
+/dev/loop3       56M   56M     0 100% /snap/core18/2721
+/dev/loop5       50M   50M     0 100% /snap/snapd/18596
+/dev/loop4       92M   92M     0 100% /snap/lxd/24061
+tmpfs           199M     0  199M   0% /run/user/1000
+tmpfs           199M     0  199M   0% /run/user/0
+
